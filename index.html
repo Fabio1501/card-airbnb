@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e7dcdc;
+            font-family: Circular,Helvetica,Arial,sans-serif;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            margin-bottom: 64px;
+        }
+
+        h2{
+            background-color: black;
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .container{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            width: 45%;
+            padding-bottom: 54px;
+        }
+
+        .container_text{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .container_text > span:not(:last-child){
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        .container_text span:last-child{
+            margin-top: 6px;
+        }
+
+        .container img:first-child{
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .container_title_ranking{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+        }
+
+        .heart{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            cursor: pointer;
+            width: 24px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi canal</h1>
+        <h2>Soy FabiDev</h2>
+    </header>
+    <div class="container">
+        <img class="image" src="https://a0.muscache.com/im/pictures/miso/Hosting-46928838/original/0959d2e9-8855-43eb-9f97-cdb7f22cedd1.jpeg?im_w=960" alt="Cabaña">
+        <div class="container_text">
+            <div class="container_title_ranking">
+                <h3>Taiozinho, Brasil</h3>
+                <div>
+                    <span>★</span>
+                    <span>5,0</span>
+                </div>
+            </div>
+            <span>A 460 kilometros de distancia</span>
+            <span>2 al 7 de jul.</span>
+            <span><b>$123 USD</b> noche</span>
+        </div>
+        <img src="https://i.postimg.cc/x1Dts24H/heart-airbnb.png" class="heart" alt="hearth-icon">
+    </div>
+</body>
+</html>
